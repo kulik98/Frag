@@ -76,6 +76,9 @@ class FirstFragment : Fragment() {
 }
 data class ItemsViewModel(val text: String) {
 }
+
+
+// Data adapter for RecyclerView 
 class CustomAdapter(private val mList: ArrayList<ItemsViewModel>) : RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val textData: TextView
